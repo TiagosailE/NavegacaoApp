@@ -1,20 +1,20 @@
 # NavegacaoApp
 
-Um aplicativo React Native com navegação entre telas usando React Navigation.
+Um aplicativo React Native com navegação entre telas usando React Navigation, focado em desenvolvimento web.
 
 ## Screenshots
 
 ### Home Screen
 
-![image](https://github.com/user-attachments/assets/d9634db0-91f1-407a-b02a-9093926e6d67)
+![Home Screen](screenshots/home.png)
 
 ### Details Screen
-![image](https://github.com/user-attachments/assets/d1e0d128-2723-4461-8963-d88be33bfa65)
+![Details Screen](screenshots/details.png)
 
 
 ## Tecnologias Utilizadas
 
-- React Native
+- React Native Web
 - TypeScript
 - React Navigation
 - Expo
@@ -53,16 +53,6 @@ npx expo install react-native-gesture-handler react-native-reanimated react-nati
 npm run web
 ```
 
-### Android
-```bash
-npm run android
-```
-
-### iOS
-```bash
-npm run ios
-```
-
 ## Estrutura do Projeto
 
 ```
@@ -78,7 +68,7 @@ NavegacaoApp/
 ## Funcionalidades
 
 - Navegação entre telas usando React Navigation
-- Interface responsiva para web e mobile
+- Interface responsiva para web
 - Suporte a TypeScript
 - Design moderno e limpo
 
