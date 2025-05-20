@@ -67,3 +67,6 @@ yarn-error.log
 .expo/
 dist/
 web-build/
+
+# Local Netlify folder
+.netlify

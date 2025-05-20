@@ -1,85 +1,89 @@
 # NavegacaoApp
 
-Um aplicativo React Native com navegação entre telas usando React Navigation, focado em desenvolvimento web.
+Aplicativo de navegação desenvolvido com React Native e TypeScript.
 
-## Screenshots
+## 🚀 Tecnologias
 
-### Home Screen
-
-![Home Screen](screenshots/home.png)
-
-### Details Screen
-![Details Screen](screenshots/details.png)
-
-
-## Tecnologias Utilizadas
-
-- React Native Web
+- React Native
 - TypeScript
-- React Navigation
 - Expo
+- React Navigation
 
-## Pré-requisitos
+## 📋 Pré-requisitos
 
-- Node.js
-- npm ou yarn
-- Expo CLI
+Antes de começar, você precisa ter instalado em sua máquina:
 
-## Instalação
+- Node.js (versão 18 ou superior)
+- npm (vem junto com o Node.js)
+- Git
+- Expo CLI (instale globalmente com `npm install -g expo-cli`)
 
-1. Clone o repositório:
+## 🔧 Instalação
+
+1. Clone o repositório
 ```bash
-git clone https://github.com/TiagosailE/NavegacaoApp.git
+git clone [URL_DO_REPOSITÓRIO]
 cd NavegacaoApp
 ```
 
-2. Instale as dependências:
+2. Instale as dependências
 ```bash
 npm install
 ```
 
-3. Instale as dependências específicas de navegação:
+3. Inicie o projeto
 ```bash
-npm install @react-navigation/native
-npx expo install react-native-screens react-native-safe-area-context
-npm install @react-navigation/native-stack
-npx expo install react-native-gesture-handler react-native-reanimated react-native-screens
+npm start
 ```
 
-## Executando o Projeto
+Após executar `npm start`, o Expo Developer Tools será aberto no seu navegador. Você terá algumas opções:
+- Pressione `w` para abrir na web
+- Pressione `a` para abrir no Android (requer Android Studio e um emulador configurado)
+- Pressione `i` para abrir no iOS (requer macOS e Xcode)
+- Escaneie o QR Code com o app Expo Go no seu celular
+
+## 📱 Executando o App
 
 ### Web
 ```bash
 npm run web
 ```
 
-## Estrutura do Projeto
-
-```
-NavegacaoApp/
-├── App.tsx              # Componente principal
-├── assets/             # Imagens e recursos
-├── src/
-│   └── screens/        # Telas do aplicativo
-├── app.json           # Configuração do Expo
-└── package.json       # Dependências do projeto
+### Android
+1. Certifique-se de ter o Android Studio instalado
+2. Configure um emulador Android ou conecte um dispositivo físico
+3. Execute:
+```bash
+npm run android
 ```
 
-## Funcionalidades
+### iOS (apenas macOS)
+1. Certifique-se de ter o Xcode instalado
+2. Execute:
+```bash
+npm run ios
+```
 
-- Navegação entre telas usando React Navigation
-- Interface responsiva para web
-- Suporte a TypeScript
-- Design moderno e limpo
+## ⚠️ Solução de Problemas
 
-## Contribuição
+Se encontrar algum erro durante a instalação ou execução:
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
-3. Faça o Commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Faça o Push para a Branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Certifique-se de que todas as dependências estão instaladas corretamente:
+```bash
+npm install
+```
 
-## Licença
+2. Limpe o cache do npm:
+```bash
+npm cache clean --force
+```
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+3. Delete a pasta node_modules e o arquivo package-lock.json:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+4. Se estiver usando Windows, execute o PowerShell como administrador
+
+5. Se o erro persistir, verifique se todas as versões das dependências no package.json são compatíveis entre si 
